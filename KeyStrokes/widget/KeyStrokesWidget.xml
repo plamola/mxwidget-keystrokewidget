@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="KeyStrokes.widget.KeyStrokesWidget" needsEntityContext="false"
+	xmlns="http://www.mendix.com/widget/1.0/">
+	<name>KeyStrokes</name>
+	<description>Listens to a key combination in the browser and fires the action of a button.</description>
+
+	<properties>
+		<property key="shortcuts" type="object" isList= "true" required="false">
+			<caption>Shortcuts</caption>
+			<category>Shortcuts</category>
+			<description>These are the key combinations that should the action of the given button.</description>
+			<properties>
+					<property key="shortcuts" type="string" required="true">
+						<caption>Key Combination</caption>
+						<category>Link</category>
+						<description>
+							This is the key combination that should be caught, for example CTRL+S .
+						</description>
+					</property>
+					<property key="cssselectors" type="string" required="true">
+						<caption>CSS Selector</caption>
+						<category>Link</category>
+						<description>
+							This is the CSS Selector of the element that will receive a Click Event as soon as the corresponding key combination is pressed.
+							When you added the class shortcut-ctrl-s to a button. The CSS Selector becomes ".shortcut-ctrl-s" (without the quotes)
+						</description>
+					</property>
+			</properties>
+		</property>
+		
+	</properties>
+</widget>	

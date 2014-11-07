@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<package xmlns="http://www.mendix.com/package/1.0/">
+	<clientModule name="KeyStrokesWidget" version="0.2" xmlns="http://www.mendix.com/clientModule/1.0/">
+		<widgetFiles>
+			<widgetFile path="KeyStrokes/widget/KeyStrokesWidget.xml"/>
+		</widgetFiles>
+		<files>
+			<file path="KeyStrokes/widget/"/>
+		</files>
+	</clientModule>
+</package>
